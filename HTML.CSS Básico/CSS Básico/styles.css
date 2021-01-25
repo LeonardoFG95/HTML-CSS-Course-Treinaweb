@@ -1,0 +1,90 @@
+div, p{
+	border: 2px solid black;
+	display: inline-block;
+}
+
+div{
+  	position: relative;
+  	width: 150px;
+  	height: 200px;
+	
+	/*background-color: none;
+	opacity: 1;
+
+	display: inline-block;
+	width: calc((100% / 3 ) - 2px);
+	border: 10px blue;
+
+	font-family: 'Allura', cursive;
+	font-family: "Time New Roman", Tahoma, arial;
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 1em;
+	font-stretch: ultra-condensed;
+	font-size-adjust: 0.545;
+
+	text-indent: 20px;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: none;
+	letter-spacing: 1px;
+	word-spacing: 10px;
+
+	width: 200px;
+	height: 50px;
+	border: solid 1px;
+	white-space: nowrap;
+
+	max-width: 1200px;
+  	margin: 10px;
+  	padding: 10px;
+  	border: 5px solid #cecece;
+  	border-radius: 30px;
+  	box-shadow: 10px 10px 5px black;
+  	overflow: auto;*/
+
+}
+
+p{
+	margin: 0;
+	position: absolute;
+	bottom: 10px;
+	top: 5px;
+	left: 5px;
+}
+
+span{
+	position: relative;
+	background-color: green;
+}
+ ul{
+ 	list-style-position: outside;
+ 	list-style-type: lower-roman;
+ }
+
+ table, th, td, th{
+ 	border: 1px solid black;
+ 	empty-cells: hide;
+ }
+
+ table{
+ 	border-collapse: collapse;
+ 	border-spacing: 10px 50px;
+ }
+
+ caption{
+ 	caption-side: bottom;
+ }
+
+ thead{
+ 	background-color: blue;
+ }
+
+ td {
+ 	text-align: center;
+ }
+
+.divs {
+ 	border: 5px solid red;
+ }

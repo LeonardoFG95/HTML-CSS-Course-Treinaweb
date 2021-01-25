@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html manifest="meu_manifesto.appcache">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        
+        <!-- Design Responsivo -->
+
+        <div class="d1" ></div>
+        <div class="d2" ></div>
+
+        <!-- Layouts com Flex Box -->
+
+        <div class="container">
+            <div class="d3 item">1</div>
+            <div class="d4 item">2</div>
+            <div class="d5 item">3</div>
+            <div class="d6 item">4</div>
+            <div class="d7 item">5</div>
+        </div>
+
+        <!-- Controle de Audio e Video -->
+        
+        <div class="video-back">
+            <div class="video-container">
+                <video src="meu_video.mp4" id="myVideo" width="600" height="240" controls></video>
+                <img src="logo.png" class="logo"/>
+            </div>
+            <ul class="topic-list">
+                <li onclick="setVideoTime(0)" class="topic-list-item">Item 1 - 0:00</li>
+                <li onclick="setVideoTime(120)" class="topic-list-item">Item 2 - 2:00</li>
+                <li onclick="setVideoTime(180)" class="topic-list-item">Item 3 - 3:00</li>
+            </ul>
+        </div>
+
+        <button onclick="setSpeed('down')" class="speed-button">Vai com calma!</button>
+        <button onclick="setSpeed('')" class="speed-button">Tô de boa!</button>
+        <button onclick="setSpeed('up')" class="speed-button">Tô com pressa!</button>
+    
+        <!-- Drag & Drop -->
+ 
+        <img src="logo.png" id="minhaImagem" draggable="true" ondragstart="dragStart(event)"/>
+
+        <div class="drop-area-container">
+            <div ondrop="drop(event)" ondragover="allowDrop(event)" class="drop-area"></div>
+            <div ondrop="drop(event)" ondragover="allowDrop(event)" class="drop-area"></div>
+        </div>
+
+        <!-- App Cache -->
+
+        <!-- Leitura de Arquivos -->
+
+        <input class="inputTxt" type="file" accept=".txt" id="myFile" onchange="handleFileSelect()">
+
+        <textarea id="fileContent"></textarea>
+
+        <button onclick="saveFile()">Save File</button>
+
+        <!-- Canvas -->
+
+        <canvas id="meuCanvas" width="400" height="300"></canvas>
+
+        <!-- SVG -->
+
+        <img src="mycircle.svg" id="myCircle" />
+
+        <!--  
+        <rect>;
+        <ellipse>;
+        <line>;
+        <polyline>;
+        <polygon>;
+        <path> 
+        --> 
+
+        <!-- Web Components -->
+
+        <label class="menu-button" for="meuMarcador">
+            <i class="fa fa-bars">X</i>
+        </label>   
+
+        <ul class="menu">
+            <li class="menu-item">Home</li>                
+            <li class="menu-item">Produtos</li>            
+            <li class="menu-item">Sobre Nós</li>            
+            <li class="menu-item">Contatos</li>                
+        </ul>
+        
+        <template id="meuMenu">    
+            
+            <style>
+                .menu {
+                    display: none;
+                    color: #fff;
+                    background-color: #252525;
+                    margin: 0;
+                    padding: 10px;
+                }
+
+                .menu-item {
+                    list-style-type: none;
+                }
+
+                #meuMarcador:checked + .menu {
+                    display: block;
+                }
+
+                #meuMarcador {
+                    display: none;
+                }
+            </style>
+        
+        </template>
+
+        <div class="container2"></div>
+
+        <script src="scripts.js"></script>
+
+    </body>
+</html>

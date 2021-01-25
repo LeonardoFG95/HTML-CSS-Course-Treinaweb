@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="mySvg" width="200" height="200">
+    <circle id="myCircle" cx="100" cy="100" r="80" style="stroke: red; stroke-width: 10; fill: green"/>
+</svg>

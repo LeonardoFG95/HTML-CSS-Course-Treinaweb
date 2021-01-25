@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulários</title>
+</head>
+<body>
+	<!-- Formulário -->
+	<form accept-charset="utf-8" autocomplete="on" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		<input type="text" name="email" maxlength="25" required=""/>
+		
+		<input type="radio" name="sexo" checked="checked" /> Homem
+  		<input type="radio" name="sexo" /> Mulher	
+
+  		<h2>Escolha quantas cores você desejar.</h2>
+		<input type="checkbox" name="cor1" /> Azul
+		<input type="checkbox" name="cor2" /> Vermelho
+		<input type="checkbox" name="cor3" /> Amarelo	
+
+		<input type="date" name=""/>	
+
+		<input type="range" min="0" max="10"/>
+
+		<input type="file" />
+
+		<input type="submit" value="Botão"/>
+
+		<!-- Select e DataList -->
+		<select>
+			<option value="html">HTML5</option>
+			<option value="css">CSS3</option>
+			<option value="js">JavaScript</option>
+		</select>
+
+		<input list="browsers" name="browser">
+			<datalist id="browsers">
+				<option value="Internet Explorer">
+				<option value="Firefox">
+				<option value="Chrome">
+				<option value="Opera">
+				<option value="Safari">	
+			</datalist>
+	
+
+		<!-- FieldSet e Legend -->
+		<fieldset>
+			<legend>Cadastro</legend>
+			Nome: <input type="text"><br>
+			Email: <input type="text"><br>
+		</fieldset>
+		<!-- ----------------- -->
+
+		<label for="email">Email</label>
+		<input type="text" name="email">
+
+		0 <input type="range" id="a" value="50"> 100
+		+
+		<input type="number" id="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+	</form>
+</body>
+</html>

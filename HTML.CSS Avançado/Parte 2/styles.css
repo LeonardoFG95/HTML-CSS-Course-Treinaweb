@@ -1,0 +1,168 @@
+/* ----- Design Responsivo ----- */
+
+div {
+    display: inline-block;
+    height: 50px;
+}
+  
+.d1 {
+width: 30%;
+background-color: red;
+}
+  
+.d2 {
+width: 70%;
+background-color: green;
+}
+
+@media screen and (max-width: 500px){
+    .d1, .d2{
+        width: 100%;
+        height: 100px;
+    }
+}
+  
+/* ----- Layouts com Flex Box ----- */
+
+.container {
+    display: flex;
+    background-color: green;
+    min-height: 100%;
+
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* ----- Controle de Audio e Video ----- */
+
+.video-back{
+	background-color: #333;
+	padding: 10px;
+}
+
+.video-container{
+	position: relative;
+	width: 300px;
+	height: 170px;
+	overflow: hidden;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.video-container:active{
+	filter: grayscale(100%);
+}
+
+.logo, #myVideo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo{
+	height: 100%;
+	display: none;
+}
+
+#myVideo{
+	width: 100%;
+}
+
+.topic-list{
+	font-size: 20px;
+	list-style: none;
+	padding: 0;
+	color: black;
+}
+
+.topic-list-item{
+	padding: 10px;
+	cursor: pointer;
+}
+
+.topic-list-item:hover{
+	background-color: rgb(78, 78, 78); 
+}
+
+.speed-button{
+	background-color: #0062ac;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+button:active{
+	background-color: #0062ee;
+}
+
+/* ----- Drag & Drop ----- */
+
+#minhaImagem {
+    display: block;
+    margin: 0 auto;
+}
+
+.drop-area-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drop-area {
+	border: 5px solid black;
+    background-color: #ddd;
+    padding: 20px 0;
+    height: 200px;
+    width: 45%;
+    min-width: 250px;
+}
+
+/* ----- Leitura de Arquivos ----- */
+
+#fileContent{
+	position: relative;
+	top: 320px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 30px auto;
+    display: block;
+    width: 90%;
+    min-height: 100px;
+}
+
+.inputTxt {
+	position: relative;
+	top: 320px;
+}
+
+/* ----- Canvas ----- */
+
+#meuCanvas {
+	position: relative;
+	top: 250px;
+	border: 1px solid #000;
+	margin: 50px auto;
+	display: block;
+}
+
+/* ----- SVG ----- */
+
+.mySvg {
+	position: relative;
+	top: 200px;
+}
+
+#myCircle {
+	position: relative;
+	left: 50px;
+	stroke: red;
+	stroke-width: 10;
+	fill: green;
+	cx: 100;
+	cy: 100;
+	r: 40;
+}
+
+/* ----- Web Components ----- */

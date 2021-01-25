@@ -1,0 +1,9 @@
+CACHE MANIFEST
+#v1.0.0
+
+CACHE:
+styles.css
+scripts.js
+
+NETWORK:
+*
